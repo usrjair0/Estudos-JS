@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM </title>
+
+    <STYLE>
+        #principal{
+            background-color: yellow;
+            text-align: center;
+            padding: 100px;
+            width: 200px;
+        }
+    </STYLE>
+</head>
+<body>
+    <div id="principal" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Essa é a minha div principal
+    </div>
+    <button id="btt">
+        olá
+    </button>
+
+    <script>
+        const redDNC = 'rgb(12, 112, 24)'
+        function clicar() {
+            principal.style.background = 'blue'
+            principal.innerText = 'Clicou'
+            principal.style.color = 'white'
+        }
+        function entrar() {
+            principal.style.background = '#123456'
+            principal.style.color = redDNC
+        }
+        function sair() {
+            principal.style.background = 'blue'
+            principal.style.color = 'orange'
+        }
+        var botao = window.document.getElementById('btt');
+        botao.addEventListener("click", ()=>{
+            alert('botão foi clicado');
+        });
+
+
+        // <div onmauseenter= "PintarAqui()" id="d1">Conteudo</div>
+        // <button onclick="PintarVermelho()">vermelho</button>
+
+        // <script>
+        //     var d1 = window.document.getElementById('id');
+        //     d1.addEventListener('mouseout', PintarVermelho());
+        //     function PintarVermelho(){
+        //         d1.style.backgroundColor = 'red'
+        //     }
+        //     function PintarAqui(){
+        //         d1.style.backgroundColor = 'aqua';
+        //     }
+
+    </script>
+</body>
+</html>

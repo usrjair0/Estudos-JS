@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //função potenciacao
+        const potenciacao = (a,b) => {
+            return Math.pow(a, b)
+        };
+        var base = prompt('Digite aqui o valor da base');
+        console.log(base);
+        var expoente = prompt('Digite aqui o valor do expoente');
+        console.log(expoente);
+
+        //convertendo de string para numero
+        base = parseFloat(base);
+        expoente = parseInt(expoente);
+
+        var resultado = potenciacao(base,expoente);
+
+        if(expoente == 2){
+            alert(`o valor de ${base} elevado ao quadrado é: ${resultado}`);
+        }else if(expoente == 3){
+            alert(`o valor de ${base} elevado ao cubo é: ${resultado}`);
+        }else {
+            alert(`o valor de ${base} elevado a ${expoente} é: ${resultado}`);
+        }
+
+    </script>
+</body>
+</html>
