@@ -1,7 +1,7 @@
 let jogador = { 
     //jogador é um objeto
     nome: 'Renato',
-    idade: 34, //objeto idade dentro do objeto jogador
+    idade: 34, //parametro idade tem como valor 34
     numGol: 81,
     //g=0 para definir que se eu não inserir o numero de gols, logo g=0
     Gol(g = 0) {
