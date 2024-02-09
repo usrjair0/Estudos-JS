@@ -1,5 +1,6 @@
-var selecao = [ // var precisa ser aberta e fechada com colchetes se for estabelecer algo nela
-// já o let tem que ser por chaves
+var selecao = [ 
+    //seleção é um array que contem 3 objetos
+    //cada objeto tem 2 parâmetros
     {
         nome: 'Neymar',
         funcao: 'Atacante' 
