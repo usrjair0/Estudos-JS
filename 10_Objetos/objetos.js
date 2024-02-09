@@ -1,5 +1,5 @@
-//let num = [1, 2, 3]
-let jogador = { //jogador é um objeto
+let jogador = { 
+    //jogador é um objeto
     nome: 'Renato',
     idade: 34, //objeto idade dentro do objeto jogador
     numGol: 81,
